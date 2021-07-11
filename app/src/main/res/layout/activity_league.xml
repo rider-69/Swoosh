@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".Controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -57,54 +57,62 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/MensClickedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onMensClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/white"
             android:textOff="@string/mens"
             android:textOn="@string/mens"
+            tools:ignore="OnClick,UsingOnClickInXml"
             tools:text="mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/WomensClickedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onWomensClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/white"
             android:textOff="@string/womens"
             android:textOn="@string/womens"
-            tools:text="Womens" />
+            tools:text="Womens"
+            tools:ignore="OnClick,UsingOnClickInXml" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/CoedClickedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onCoedClicked"
             android:text="@string/togglebutton"
             android:textColor="@color/white"
             android:textOff="@string/co_ed"
             android:textOn="@string/co_ed"
-            tools:text="co-ed" />
+            tools:text="co-ed"
+            tools:ignore="UsingOnClickInXml" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextToThirdbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/swoosh_toggle"
+        android:onClick="onLeagueNxtTothirdBtn"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.943"
+        tools:ignore="OnClick,UsingOnClickInXml" />
 </androidx.constraintlayout.widget.ConstraintLayout>

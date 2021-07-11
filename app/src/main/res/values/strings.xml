@@ -13,9 +13,14 @@
     <string name="womens">Womens</string>
 
     <string name="co_ed">co-ed</string>
-
     <string name="togglebutton">ToggleButton</string>
-
     <string name="next">next</string>
     <string name="background_image">background image</string>
+    <string name="baller">Baller</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="beginner">Beginner</string>
+    <string name="finish">Finish</string>
+    <string name="SearchLeague">Looking for the Coed Beginner League near you...</string>
+    <string name="layout_backgound">layout backgound</string>
+
 </resources>

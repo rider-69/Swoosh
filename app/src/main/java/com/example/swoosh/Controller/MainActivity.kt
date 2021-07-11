@@ -1,19 +1,18 @@
-package com.example.swoosh
+package com.example.swoosh.Controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import com.example.swoosh.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.welcomeactivity)
 
          val getStarted:Button = findViewById(R.id.GetStartedbtn)
         getStarted.setOnClickListener {
-               val LeagueIntent =  Intent(this,LeagueActivity::class.java )
+               val LeagueIntent =  Intent(this, LeagueActivity::class.java )
               startActivity(LeagueIntent)
         }
     }
