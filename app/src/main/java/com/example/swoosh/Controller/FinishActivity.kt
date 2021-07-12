@@ -5,9 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import com.example.swoosh.Extra_League
-import com.example.swoosh.Extra_skill
-import com.example.swoosh.R
+import com.example.swoosh.*
 
 class FinishActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -16,10 +14,9 @@ class FinishActivity : AppCompatActivity() {
         setContentView(R.layout.activity_finish)
        val searchText:TextView = findViewById(R.id.searchLeaguesText)
 
-        val league = intent.getStringExtra(Extra_League)
-        val skill  =  intent.getStringExtra(Extra_skill)
+        val player = intent.getParcelableExtra<Player>(EXTRA_PLAYER)
 
-        searchText.text =  "Looking for $league $skill league near you"
+        searchText.text =  "Looking for ${player?.league} ${player?.skill} league near you"
 
 
 
